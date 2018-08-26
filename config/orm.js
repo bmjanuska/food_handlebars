@@ -80,7 +80,7 @@ updateOne: function(table, objColVals, condition, cb) {
   queryString += " SET ";
   queryString += objToSql(objColVals);
   queryString += " WHERE ";
-  queryString += condiion;
+  queryString += condition;
 
   console.log(queryString);
   connection.query(queryString, function(err, result){

@@ -11,7 +11,7 @@ var router = express.Router();
 //=======================================
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  food.all(function(data) {
+  food.selectAll(function(data) {
     var hbsObject = {
       food: data
     };
@@ -21,8 +21,8 @@ router.get("/", function(req, res) {
 });
 
 router.post("/api/food", function(req, res) {
-  food.create([
-    "name", "devoured"
+  food.insertOne([
+    "food_name", "devoured"
   ], [
     req.body.name, req.body.devoured
   ], function(result) {
@@ -36,7 +36,7 @@ router.put("/api/food/:id", function(req, res) {
 
   console.log("condition", condition);
 
-  food.update({
+  food.updateOne({
     devoured: req.body.devoured
   }, condition, function(result) {
     if (result.changedRows == 0) {
