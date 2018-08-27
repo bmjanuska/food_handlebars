@@ -27,7 +27,7 @@ $(function() {
 
     var newFood = {
       food_name: $("#fd").val().trim(),
-      devoured: $("[food_name=devoured]:checked").val().trim()
+      devoured: $("[food_name=devoured]").val().trim()
     };
 
     // Send the POST request.

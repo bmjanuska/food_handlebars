@@ -1,32 +1,43 @@
-<h1>Order Up!</h1>
-
-<h2>Eat these!</h2>
-
-<ul>
-  {{#each food}}
-    {{#unless devoured}}
-      {{> food/food-block devoured=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Already Had</h2>
-
-<ul>
-  {{#each food}}
-    {{#if devoured}}
-      {{> food/food-block devoured=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Food</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="food">Food Name:</label>
-    <input type="text" id="fd" name="food_name">
+<div class="overlay">
+<div class="jumbotron jumbotron-fluid text-center">
+  <div class="container">
+    <h1 class="display-4">O-CHA</h1>
+    <p class="lead">The online tea bar with infinite refreshments</p>
   </div>
+</div>
+</div>
+<div class="container">
 
-  <button type="submit">Add Food</button>
-</form>
+
+  <h2>Eat these!</h2>
+
+  <ul>
+    {{#each food}}
+      {{#unless devoured}}
+        {{> food/food-block devoured=true}}
+      {{/unless}}
+    {{/each}}
+  </ul>
+
+  <h2>Already Had</h2>
+
+  <ul>
+    {{#each food}}
+      {{#if devoured}}
+        {{> food/food-block devoured=false}}
+      {{/if}}
+    {{/each}}
+  </ul>
+
+  <h2>Add a Food</h2>
+  <form class="create-form">
+
+    <div class="form-group">
+      <label for="food">Food Name:</label>
+      <input type="text" id="fd" name="food_name">
+    </div>
+
+    <button type="submit">Add Food</button>
+  </form>
+
+</div>

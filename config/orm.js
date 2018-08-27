@@ -69,7 +69,7 @@ insertOne: function(table, cols, vals, cb) {
     if (err) {
       throw err;
     }
-    sb(result);
+    cb(result);
   });
 },
 

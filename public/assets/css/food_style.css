@@ -1,9 +1,19 @@
 /*STYLE*/
 /*================================*/
 
-/*HEADER*/
+/*HEADER/JUMBO*/
 /*================================*/
+.jumbotron {
+    background-image: url('../img/julia-d-alkmin-121797-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    color:#fff;
+    height: 400px;
+}
 
+.overlay {
+  background: rgba(202, 136, 81, 0.93);
+}
 /*================================*/
 
 
@@ -17,7 +27,6 @@
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {
