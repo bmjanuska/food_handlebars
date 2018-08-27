@@ -5,7 +5,7 @@ $(function() {
     var newEaten = $(this).data("neweaten");
 
     var newEatenState = {
-      sleepy: newEaten
+      devoured: newEaten
     };
 
     // Send the PUT request.
@@ -26,7 +26,7 @@ $(function() {
     event.preventDefault();
 
     var newFood = {
-      food_name: $("#food").val().trim(),
+      food_name: $("#fd").val().trim(),
       devoured: $("[food_name=devoured]:checked").val().trim()
     };
 
