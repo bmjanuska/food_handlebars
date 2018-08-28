@@ -45,7 +45,7 @@ h2{
   color: #FCFCEC;
 
 }
-p {
+p,label {
   font-family: 'Montserrat', sans-serif;
 }
 /*================================*/
@@ -136,7 +136,6 @@ li {
 
 /*BUTTON*/
 /*================================*/
-
 button {
     margin: 0;
     font-family: inherit;
@@ -145,8 +144,25 @@ button {
     border-radius: 5px;
     background: #ABCF5B;
     border-style: none;
-    padding: 10px 20px;
+    padding: 7px 20px;
+    margin: 10px 25px;
     color: #FCFCEC;
+    font-family: 'Montserrat', sans-serif;
+}
+/*================================*/
+
+/*FOOTER*/
+/*================================*/
+.footer {
+    margin: 50px 0 0 0;
+    background-color: #F7DB3B;
 }
 
+.footer a{
+  font-size: 12px
+  letter-spacing: 1px;
+  color:#FCFCEC;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
 /*================================*/
