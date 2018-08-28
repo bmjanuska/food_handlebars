@@ -4,22 +4,37 @@
 /*HEADER/JUMBO*/
 /*================================*/
 .jumbotron {
-    background-image: url('../img/julia-d-alkmin-121797-unsplash.jpg');
-    background-size: cover;
-    background-position: center center;
-    color:#fff;
-    height: 400px;
+  background-image: url('../img/julia-d-alkmin-121797-unsplash.jpg');
+  background-size: cover;
+  background-position: center center;
+  color:#fff;
+  height: 400px;
 }
 
-.overlay {
-  background: rgba(202, 136, 81, 0.93);
-}
+
 /*================================*/
 
 
 /*TYPOGRAPHY*/
 /*================================*/
 
+h1{
+  font-size: 4.5rem;
+
+}
+
+.display-4 {
+  margin-top: 5%;
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 5.9px;
+  font-family: 'Playfair Display', serif;
+
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
 /*================================*/
 
 /*LIST*/
@@ -44,5 +59,19 @@ li {
 }
 /*================================*/
 
+/*BUTTON*/
+/*================================*/
+
+button {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 5px;
+    background: #17a2b8;
+    border-style: none;
+    padding: 10px 20px;
+    color: #fff;
+}
 
 /*================================*/

@@ -2,19 +2,18 @@
 $(function() {
   $(".change-eaten").on("click", function(event) {
     var id = $(this).data("id");
-    var newEaten = $(this).data("neweaten");
 
-    var newEatenState = {
-      devoured: newEaten
-    };
+    // var newEatenState = {
+    //   devoured: true
+    // };
 
     // Send the PUT request.
     $.ajax("/api/food/" + id, {
-      type: "PUT",
-      data: newEatenState
+      type: "PUT"
+      // data: newEatenState
     }).then(
       function() {
-        console.log("changed sleep to", newEaten);
+        console.log("changed sleep to", true);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -26,8 +25,7 @@ $(function() {
     event.preventDefault();
 
     var newFood = {
-      food_name: $("#fd").val().trim(),
-      devoured: $("[food_name=devoured]").val().trim()
+      food_name: $("#fd").val().trim()
     };
 
     // Send the POST request.
