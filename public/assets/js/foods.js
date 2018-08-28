@@ -13,7 +13,7 @@ $(function() {
       // data: newEatenState
     }).then(
       function() {
-        console.log("changed sleep to", true);
+        console.log("changed drink to", true);
         // Reload the page to get the updated list
         location.reload();
       }
@@ -34,7 +34,7 @@ $(function() {
       data: newFood
     }).then(
       function() {
-        console.log("created new food");
+        console.log("created new drink");
         // Reload the page to get the updated list
         location.reload();
       }
