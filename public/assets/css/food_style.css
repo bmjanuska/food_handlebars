@@ -105,7 +105,7 @@ p,label {
   opacity: 0.3;
   position: absolute;
   top: -60px;
-  right: -9px;
+  right: 0px;
   animation: sparkle-ani2 10s infinite;
   animation-timing-function: linear;
 }
